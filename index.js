@@ -13,16 +13,15 @@
   }
 
   function destructivelyRemoveLastDriver(){
-
+    return drivers.pop();
   }
 
   function destructivelyRemoveFirstDriver(){
-
+    return drivers.shift();
   }
 
   function appendDriver(name){
-    newDrivers = drivers.splice(-1,1,name);
-    return newDrivers.push(name);
+    return drivers.splice(-1,1,name);
   }
 
   function prependDriver(name){
