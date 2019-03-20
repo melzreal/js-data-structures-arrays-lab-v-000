@@ -21,12 +21,13 @@
   }
 
   function appendDriver(name){
-    return drivers.splice(-1,1,name);
+    newDrivers = drivers.splice(-1,1,name);
+    return newDrivers;
   }
 
   function prependDriver(name){
-   newDrivers = drivers.slice(0);
-   return newDrivers.unshift(name);
+   newDrivers = drivers.splice(0,1,name);
+   return newDrivers;
   }
 
   function removeLastDriver(){
