@@ -32,7 +32,7 @@
 
   function removeLastDriver(){
     newDrivers = drivers.slice(-1);
-    return newDrivers.pop;
+    return newDrivers;
   }
 
   function removeFirstDriver(){
