@@ -29,9 +29,9 @@
   }
 
   function removeLastDriver(){
-
+    return drivers.pop();
   }
 
   function removeFirstDriver(){
-
+    return drivers.shift();
   }
