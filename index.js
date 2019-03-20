@@ -21,7 +21,7 @@
   }
 
   function appendDriver(name){
-    newDrivers = drivers.slice(drivers.length-1);
+    newDrivers = drivers.splice(-1,1,name);
     return newDrivers.push(name);
   }
 
