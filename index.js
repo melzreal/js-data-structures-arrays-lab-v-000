@@ -31,7 +31,7 @@
   }
 
   function removeLastDriver(){
-    newDrivers = [...drivers];
+    newDrivers = drivers.splice(-1,1);
     return newDrivers;
   }
 
