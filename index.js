@@ -36,5 +36,6 @@
   }
 
   function removeFirstDriver(){
-    return drivers.shift();
+    newDrivers = [...drivers.slice(1,drivers.length)];
+    return newDrivers;
   }
