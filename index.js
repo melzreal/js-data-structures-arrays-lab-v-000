@@ -1,5 +1,5 @@
 // Write your solution here!
-
-
-  const drivers = ["Milo", "Otis", "Garfield"];
-  return muskies;
+  function drivers() {
+    const muskies = ["Milo", "Otis", "Garfield"];
+    return muskies;
+  }
