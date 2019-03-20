@@ -26,11 +26,12 @@
 
   function prependDriver(name){
    newDrivers = drivers.slice(0);
-   return newDrivers.push(name);
+   return newDrivers.unshift(name);
   }
 
   function removeLastDriver(){
-    return drivers.pop();
+    newDrivers = drivers.slice(-1);
+    return newDrivers.pop;
   }
 
   function removeFirstDriver(){
