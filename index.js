@@ -21,7 +21,7 @@
   }
 
   function appendDriver(name){
-    newDrivers = drivers.splice(-1,1,name);
+    newDrivers = [...drivers.slice(-1), name];
     return newDrivers;
   }
 
@@ -31,8 +31,7 @@
   }
 
   function removeLastDriver(){
-    newDrivers = [...drivers.splice(-1,1)];
-    return newDrivers;
+
   }
 
   function removeFirstDriver(){
